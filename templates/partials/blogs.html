@@ -1,0 +1,13 @@
+<title>${title}</title>
+<h1>${title}</h1>
+
+<ul>
+
+    ${ posts.map((post) => {
+      return `
+    <li><a href="/blogs/${post.id}">${post.name}</a></li>
+      `
+    }).join('') }
+  </ul>
+
+  <p><a href="/">&larr; BACK</a></p>
